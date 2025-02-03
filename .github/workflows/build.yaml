@@ -12,13 +12,33 @@ env:
 jobs:
   build-job:
     name: Build Job
+    strategy:
+      matrix:
+        repos:
+          - antlr4-runtime
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/setup-java@v4
-        with:
-          java-version: '21'
-          distribution: 'zulu'
-      - name: Build IKMDEV Code
-        uses: ikmdev/maven-clean-install-build-action@main
-        with:
-          branch_name: ${{env.BRANCH_NAME}}
+     - name: Checkout Code Repository
+       uses: actions/checkout@v4
+       with:
+         repository: ikmdev/jpms-${{matrix.repos}}
+    
+     - name: Setup Java
+       uses: actions/setup-java@v4
+       with:
+            distribution: 'zulu'
+            java-version: '21'
+
+     - name: Run Build
+       run: |
+         ./mvnw clean install \
+           -Dmaven.build.cache.enabled=false --batch-mode -e \
+           -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn
+      
+     - name: Build IKMDEV Code
+       run: |
+          size=$(find ./target -maxdepth 1 -type f -name '*[!-javadoc][!-sources].jar' -exec jar tf  {} \; | grep -c 'dev.ikm.jpms' | xargs )
+          if [ "$size" -lt "2" ]; then
+              echo "ERROR: jar does not contain ikmdev packages"
+          exit 1
+  fi
