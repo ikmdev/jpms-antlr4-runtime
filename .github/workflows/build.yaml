@@ -11,7 +11,7 @@ env:
 
 jobs:
   build-job:
-    name: Build Job
+    name: Build Job -- ${{matrix.repos}}
     strategy:
       matrix:
         repos:
