@@ -24,9 +24,7 @@ jobs:
         
   build-job:
     name: General Build
-    runs-on: ubuntu-24.04
-    steps:          
-      - name: Build JPMS Repos
-        uses: ikmdev/maven-jpms-test-build-action/.github/workflows/build.yaml@main
+    uses: ikmdev/maven-jpms-test-build-action/.github/workflows/build.yaml@main
+    
        
          
