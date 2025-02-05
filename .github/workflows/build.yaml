@@ -15,7 +15,10 @@ jobs:
     strategy:
       matrix:
         repos:
+          - activej-bytebuf
+          - activej-common
           - antlr4-runtime
+          - auto-service
     runs-on: ubuntu-24.04
     steps:
      - name: Checkout Code Repository
