@@ -22,9 +22,16 @@ jobs:
       - name: Pull Request Version Validation
         uses: ikmdev/maven-pull-request-version-validation-action@v1.0.0
         
-  build-job:
+  general-build-job:
     name: General Build
     uses: ikmdev/maven-jpms-test-build-action/.github/workflows/build.yaml@main
+
+  build-job:
+    name: Build Job
+    runs-on: ubuntu-24.04
+    steps:          
+      - name: Build IKMDEV Code
+        uses: ikmdev/maven-clean-install-build-action@v3
+        with:
+          branch_name: ${{github.ref_name}}
     
-       
-         
