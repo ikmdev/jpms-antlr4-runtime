@@ -14,7 +14,7 @@
 	<groupId>dev.ikm.jpms</groupId>
 	<artifactId>antlr4-runtime</artifactId>
 	<packaging>jar</packaging>
-	<version>4.13.2-r1-SNAPSHOT</version>
+	<version>4.13.2-r2</version>
 
 	<properties>
 		<!-- change release here-->
