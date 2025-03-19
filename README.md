@@ -9,7 +9,7 @@ This repository contains a Java Platform Module System (JPMS) compliant version 
 ## Getting Started
 ### Prerequisites
 
-* Java 11 or higher: JPMS was introduced in Java 9, so a minimum of Java 11 is recommended for compatibility and support.
+* `Java 11 or higher:` JPMS was introduced in Java 9, so a minimum of Java 11 is recommended for compatibility and support.
 * Maven or Gradle: For dependency management and building the project.
 
 Add the following dependency to your pom.xml:
