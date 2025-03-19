@@ -1,41 +1,42 @@
-# Title
+# jpms-antlr4-runtime
+This repository contains a Java Platform Module System (JPMS) compliant version of the ANTLR4 runtime library. The goal of this project is to provide a modularized version of the ANTLR4 runtime that can be easily integrated into Java projects using JPMS.
+Overview
 
-|| Description about the Project ||
+# Features
 
-### Team Ownership - Product Owner
-
-Team Ownership - Product Owner
+### JPMS Compliance: 
+The library is packaged as a JPMS module, enabling better encapsulation and dependency management in Java projects.
+Ease of Use: Simple integration into projects using JPMS.
 
 ## Getting Started
+### Prerequisites
 
-Required for running this:
+Java 11 or higher: JPMS was introduced in Java 9, so a minimum of Java 11 is recommended for compatibility and support.
+Maven or Gradle: For dependency management and building the project.
 
-1. Download and install Open JDK Java 23
+Installation
+Maven
+Add the following dependency to your pom.xml:
+```xml
+<dependency>
+    <groupId>org.antlr</groupId>
+    <artifactId>antlr4-runtime</artifactId>
+    <version>4.9.2</version>
+</dependency>
+```xml
 
-## Building and Running
+Module Declaration
+In your module descriptor (module-info.java), declare the dependency on the antlr4.runtime module:
 
-Follow the steps below to build and run Komet on your local machine:
+```java
+module your.module.name {
+    requires antlr4.runtime;
+}
+```java
 
-1. Clone the repository from GitHub to your local machine
 
-2. Change local directory to cloned repo location
-
-3. Enter the following command to build the application:
-
-Unix/Linux/OSX:
-
-```bash
-./mvnw clean install
-```
-
-Windows:
-
-```bash
-./mvnw.cmd clean install
-```
 
 ## Issues and Contributions
 Technical and non-technical issues can be reported to the [Issue Tracker](https://github.com/ikmdev/repo-seed/issues).
 
 Contributions can be submitted via pull requests. Please check the [contribution guide](doc/how-to-contribute.md) for more details.
-
