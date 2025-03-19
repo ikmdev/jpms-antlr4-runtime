@@ -13,18 +13,15 @@ Ease of Use: Simple integration into projects using JPMS.
 Java 11 or higher: JPMS was introduced in Java 9, so a minimum of Java 11 is recommended for compatibility and support.
 Maven or Gradle: For dependency management and building the project.
 
-Installation
-Maven
 Add the following dependency to your pom.xml:
 ```xml
 <dependency>
-    <groupId>org.antlr</groupId>
-    <artifactId>antlr4-runtime</artifactId>
-    <version>4.9.2</version>
+    <groupId>dev.ikm.jpms</groupId>
+	<artifactId>antlr4-runtime</artifactId>
+    <version>${latest-version}</version>
 </dependency>
 ```
 
-Module Declaration
 In your module descriptor (module-info.java), declare the dependency on the antlr4.runtime module:
 
 ```java
@@ -32,7 +29,6 @@ module your.module.name {
     requires antlr4.runtime;
 }
 ```
-
 
 
 ## Issues and Contributions
