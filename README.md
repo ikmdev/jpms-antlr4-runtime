@@ -23,7 +23,7 @@ Add the following dependency to your pom.xml:
     <artifactId>antlr4-runtime</artifactId>
     <version>4.9.2</version>
 </dependency>
-```xml
+```
 
 Module Declaration
 In your module descriptor (module-info.java), declare the dependency on the antlr4.runtime module:
@@ -32,7 +32,7 @@ In your module descriptor (module-info.java), declare the dependency on the antl
 module your.module.name {
     requires antlr4.runtime;
 }
-```java
+```
 
 
 
