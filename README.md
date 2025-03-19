@@ -3,14 +3,14 @@ This repository contains a Java Platform Module System (JPMS) compliant version 
 
 ## Features
 
-* JPMS Compliance: The library is packaged as a JPMS module, enabling better encapsulation and dependency management in Java projects.
-* Ease of Use: Simple integration into projects using JPMS.
+* **JPMS Compliance:** The library is packaged as a JPMS module, enabling better encapsulation and dependency management in Java projects.
+* **Ease of Use:** Simple integration into projects using JPMS.
 
 ## Getting Started
 ### Prerequisites
 
 * **Java 11 or higher:** JPMS was introduced in Java 9, so a minimum of Java 11 is recommended for compatibility and support.
-* Maven or Gradle: For dependency management and building the project.
+* **Maven or Gradle:** For dependency management and building the project.
 
 Add the following dependency to your pom.xml:
 ```xml
