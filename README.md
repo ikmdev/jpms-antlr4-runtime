@@ -1,8 +1,7 @@
 # jpms-antlr4-runtime
 This repository contains a Java Platform Module System (JPMS) compliant version of the ANTLR4 runtime library. The goal of this project is to provide a modularized version of the ANTLR4 runtime that can be easily integrated into Java projects using JPMS.
-Overview
 
-# Features
+## Features
 
 ### JPMS Compliance: 
 The library is packaged as a JPMS module, enabling better encapsulation and dependency management in Java projects.
