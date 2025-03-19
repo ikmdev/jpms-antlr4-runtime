@@ -21,6 +21,11 @@ Add the following dependency to your pom.xml:
 </dependency>
 ```
 
+Add the following dependency to your build.gradle:
+```groovy
+implementation 'dev.ikm.jpms:antlr4-runtime:${latest-version}'
+```
+
 In your module descriptor (module-info.java), declare the dependency on the antlr4.runtime module:
 
 ```java
