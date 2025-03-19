@@ -26,7 +26,7 @@ In your module descriptor (module-info.java), declare the dependency on the antl
 
 ```java
 module your.module.name {
-    requires antlr4.runtime;
+    requires dev.ikm.jpms.antlr4.runtime;
 }
 ```
 
