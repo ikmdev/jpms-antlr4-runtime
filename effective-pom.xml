@@ -8,7 +8,7 @@
 <!-- ====================================================================== -->
 <!--                                                                        -->
 <!-- Effective POM for project                                              -->
-<!-- 'dev.ikm.jpms:antlr4-runtime:jar:4.13.2-r3-SNAPSHOT'                   -->
+<!-- 'dev.ikm.jpms:antlr4-runtime:jar:4.13.2-r4-SNAPSHOT'                   -->
 <!--                                                                        -->
 <!-- ====================================================================== -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -21,7 +21,7 @@
   </parent>
   <groupId>dev.ikm.jpms</groupId>
   <artifactId>antlr4-runtime</artifactId>
-  <version>4.13.2-r3-SNAPSHOT</version>
+  <version>4.13.2-r4-SNAPSHOT</version>
   <description>The General Parent that helps to define the build processes that should be used across projects, regardless of.
         Package type. This is versioned and if you want to use a different version of the pom, you can simply change
         the parent version and it will adjust all of the properties being used throughout, as the properties and
@@ -55,7 +55,7 @@
   </issueManagement>
   <properties>
     <build-helper-maven-plugin.version>3.6.0</build-helper-maven-plugin.version>
-    <core.artifact.release>r3</core.artifact.release>
+    <core.artifact.release>r4</core.artifact.release>
     <core.artifact.version>4.13.2</core.artifact.version>
     <java.version>23</java.version>
     <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
@@ -102,6 +102,9 @@
   </repositories>
   <pluginRepositories>
     <pluginRepository>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
@@ -130,7 +133,7 @@
       </testResource>
     </testResources>
     <directory>c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-antlr4-runtime\target</directory>
-    <finalName>antlr4-runtime-4.13.2-r3-SNAPSHOT</finalName>
+    <finalName>antlr4-runtime-4.13.2-r4-SNAPSHOT</finalName>
     <pluginManagement>
       <plugins>
         <plugin>
@@ -444,7 +447,7 @@
             <configuration>
               <target>
                 <echo message="renaming sources file" />
-                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-antlr4-runtime\target/dependency/antlr4-runtime-4.13.2-sources.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-antlr4-runtime\target/antlr4-runtime-4.13.2-r3-SNAPSHOT-sources.jar" />
+                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-antlr4-runtime\target/dependency/antlr4-runtime-4.13.2-sources.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-antlr4-runtime\target/antlr4-runtime-4.13.2-r4-SNAPSHOT-sources.jar" />
               </target>
             </configuration>
           </execution>
@@ -457,7 +460,7 @@
             <configuration>
               <target>
                 <echo message="renaming javadoc file" />
-                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-antlr4-runtime\target/dependency/antlr4-runtime-4.13.2-javadoc.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-antlr4-runtime\target/antlr4-runtime-4.13.2-r3-SNAPSHOT-javadoc.jar" />
+                <copy file="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-antlr4-runtime\target/dependency/antlr4-runtime-4.13.2-javadoc.jar" tofile="c:\Users\omomofonmwan\FDAShieldCode\GitHub\ikmdev\jpms-repos\jpms-antlr4-runtime\target/antlr4-runtime-4.13.2-r4-SNAPSHOT-javadoc.jar" />
               </target>
             </configuration>
           </execution>
@@ -510,7 +513,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.4.1</version>
+        <version>3.3.0</version>
         <executions>
           <execution>
             <id>default-jar</id>
@@ -523,7 +526,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.13.0</version>
+        <version>3.11.0</version>
         <executions>
           <execution>
             <id>default-compile</id>
@@ -543,7 +546,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.2.5</version>
+        <version>3.1.2</version>
         <executions>
           <execution>
             <id>default-test</id>
