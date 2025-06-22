@@ -13,13 +13,14 @@
 
 	<groupId>dev.ikm.jpms</groupId>
 	<artifactId>antlr4-runtime</artifactId>
+    <name>ANTLR 4 Runtime</name>
 	<packaging>jar</packaging>
 	<version>4.13.2-r5-SNAPSHOT</version>
 
 	<properties>
 		<!-- change release here-->
 		<core.artifact.version>4.13.2</core.artifact.version>
-		<core.artifact.release></core.artifact.release>
+		<core.artifact.release>r5</core.artifact.release>
 
 		<maven.moditect.plugin>1.2.2.Final</maven.moditect.plugin>
 	</properties>
