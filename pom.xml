@@ -15,7 +15,7 @@
 	<artifactId>antlr4-runtime</artifactId>
     <name>ANTLR 4 Runtime</name>
 	<packaging>jar</packaging>
-	<version>4.13.2-r5</version>
+	<version>4.13.2-r6-SNAPSHOT</version>
 
 	<properties>
 		<!-- change release here-->
